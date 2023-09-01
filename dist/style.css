@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "El Messiri", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+.program-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  background-color: rgb(250, 245, 232);
+  position: relative;
+}
+.program-container a {
+  transition: 0.1ms ease-out;
+  -webkit-transition: 0.1ms ease-out;
+  -moz-transition: 0.1ms ease-out;
+  -ms-transition: 0.1ms ease-out;
+  -o-transition: 0.1ms ease-out;
+}
+.program-container a:hover .view img {
+  padding-right: 40%;
+}
+.program-container .program-background {
+  position: relative;
+}
+.program-container .program-background img {
+  width: 100%;
+  border-bottom-left-radius: 5px;
+}
+.program-container .program-background::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38%;
+  background: linear-gradient(to top, rgba(55, 99, 96, 0.9), transparent);
+  border-bottom-left-radius: 46px;
+}
+.program-container .program {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-11%, -110%);
+  -webkit-transform: translate(-11%, -110%);
+  -moz-transform: translate(-11%, -110%);
+  -ms-transform: translate(-11%, -110%);
+  -o-transform: translate(-11%, -110%);
+}
+.program-container .program img {
+  background-color: rgb(255, 213, 0);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+}
+.program-container .program b {
+  font-size: 24px;
+}
+
+.program-container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  background-color: rgb(250, 245, 232);
+  margin-top: 30px;
+  padding: 25px;
+}
+.program-container-two .program-two {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10% 0% 10% 10%;
+}
+.program-container-two .program-two img {
+  width: 100%;
+}
+.program-container-two .program-two b {
+  font-size: 22px;
+  color: black;
+  padding: 15px;
+}
