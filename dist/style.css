@@ -1,11 +1,36 @@
 * {
   box-sizing: border-box;
+  scrollbar-color: #C89D54 #fff;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 30px;
+  background-color: #C89D54;
 }
 
 body {
-  font-family: "Cairo", sans-serif;
-  font-family: "El Messiri", sans-serif;
   font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
 }
 
 .container .no-padding-container {
@@ -46,7 +71,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 1rem;
   background-color: rgb(250, 245, 232);
   position: relative;
 }
@@ -141,7 +166,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 1rem;
   background-color: rgb(250, 245, 232);
   margin-top: 30px;
   padding: 25px;
@@ -180,54 +205,51 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 65%;
+  align-items: flex-start;
+  bottom: 4rem;
   color: white;
-  right: 5%;
+  right: 4rem;
   gap: 10px;
 }
 .program-episods .episode .episode-details h2 {
   font-weight: bold;
 }
-.program-episods .episode .episode-details .view {
+.program-episods .episode .episode-details .qaf-btn {
+  outline: none;
+  border: none;
+  font-size: 18px;
   display: flex;
-  background-color: rgb(200, 157, 84);
-  color: white;
-  padding: 0.5rem;
-  width: 145px;
-  justify-content: space-around;
-  border-radius: 20px 0px 10px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.program-episods .episode .episode-details .qaf-btn.primary-btn {
+  color: #fff;
+  padding: 0.45rem 1rem;
+  border-radius: 40px 0px 40px 40px;
+  background: #C89D54;
+}
+.program-episods .episode .episode-details .qaf-btn .play-icon i {
   transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
+  margin-inline-start: 0.5rem;
 }
-.program-episods .episode .episode-details .view img {
+.program-episods .episode .episode-details .qaf-btn.hover-expand-move-rotate {
   transition: 0.3s all;
-  -webkit-transition: 0.3s all;
-  -moz-transition: 0.3s all;
-  -ms-transition: 0.3s all;
-  -o-transition: 0.3s all;
 }
-.program-episods .episode .episode-details .view-episode:hover .view {
-  width: 200px;
+.program-episods .episode .episode-details .qaf-btn.hover-expand-move-rotate:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-.program-episods .episode .episode-details .view-episode:hover img {
-  transform: rotate(57deg);
-  -webkit-transform: rotate(57deg);
-  -moz-transform: rotate(57deg);
-  -ms-transform: rotate(57deg);
-  -o-transform: rotate(57deg);
+.program-episods .episode .episode-details .qaf-btn.hover-expand-move-rotate:hover.primary-btn {
+  background: #B78C42;
+}
+.program-episods .episode .episode-details .qaf-btn.hover-expand-move-rotate:hover .play-icon i {
+  transform: rotate(180deg) translateX(5px);
 }
 .program-episods .episode .logo {
   position: absolute;
-  top: 91%;
-  left: 5%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  bottom: -1rem;
+  left: 4rem;
 }
 .program-episods .episode-footer {
   display: flex;
