@@ -130,11 +130,11 @@ body {
   gap: 50px;
 }
 .program-container a:hover .view img {
-  transform: rotate(70deg);
-  -webkit-transform: rotate(70deg);
-  -moz-transform: rotate(70deg);
-  -ms-transform: rotate(70deg);
-  -o-transform: rotate(70deg);
+  transform: rotate(56deg);
+  -webkit-transform: rotate(56deg);
+  -moz-transform: rotate(56deg);
+  -ms-transform: rotate(56deg);
+  -o-transform: rotate(56deg);
 }
 
 .program-container-two {
@@ -160,4 +160,123 @@ body {
   font-size: 22px;
   color: black;
   padding: 15px;
+}
+
+.program-episods {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 50px;
+  gap: 30px;
+  background-color: rgb(250, 245, 232);
+}
+.program-episods p {
+  margin-bottom: 0;
+}
+.program-episods .episode {
+  position: relative;
+}
+.program-episods .episode .episode-details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 65%;
+  color: white;
+  right: 5%;
+  gap: 10px;
+}
+.program-episods .episode .episode-details h2 {
+  font-weight: bold;
+}
+.program-episods .episode .episode-details .view {
+  display: flex;
+  background-color: rgb(200, 157, 84);
+  color: white;
+  padding: 0.5rem;
+  width: 145px;
+  justify-content: space-around;
+  border-radius: 20px 0px 10px 20px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.program-episods .episode .episode-details .view img {
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.program-episods .episode .episode-details .view-episode:hover .view {
+  width: 200px;
+}
+.program-episods .episode .episode-details .view-episode:hover img {
+  transform: rotate(57deg);
+  -webkit-transform: rotate(57deg);
+  -moz-transform: rotate(57deg);
+  -ms-transform: rotate(57deg);
+  -o-transform: rotate(57deg);
+}
+.program-episods .episode .logo {
+  position: absolute;
+  top: 91%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.program-episods .episode-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.program-episods .episode-footer .person-name {
+  display: flex;
+  gap: 15px;
+}
+.program-episods .episode-footer .person-name img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 65px;
+  border: 7px solid rgb(183, 140, 66);
+  border-radius: 40px;
+  object-fit: contain;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.program-episods .episode-footer .person-name .question-answer {
+  display: flex;
+  flex-direction: column;
+}
+.program-episods .episode-footer .person-name .question-answer p {
+  font-weight: bold;
+}
+.program-episods .episode-footer .person-name .question-answer b {
+  font-family: "El Messiri", sans-serif;
+}
+.program-episods .episode-footer .date p {
+  font-weight: bold;
+}
+.program-episods .episode-footer .date b {
+  font-family: "El Messiri", sans-serif;
+}
+.program-episods .episode-footer .share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.program-episods .episode-footer .share .icons {
+  display: flex;
+  gap: 15px;
+}
+.program-episods .episode-footer .share .icons img {
+  width: 22px;
+  vertical-align: middle;
 }
