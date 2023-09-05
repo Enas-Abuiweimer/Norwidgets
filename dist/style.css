@@ -310,7 +310,7 @@ select {
 }
 .qaf-new .qaf-new-header .qaf-svg {
   fill: rgb(28, 80, 85);
-  width: 10px;
+  width: 20px;
 }
 .qaf-new .qaf-new-header h4 {
   color: rgb(28, 80, 85);
@@ -380,6 +380,7 @@ select {
   filter: blur(2px);
   -webkit-filter: blur(2px);
   border-bottom-left-radius: 50px;
+  width: 100%;
 }
 .qaf-new .qaf-new-program-details .image-container.before-bottom {
   position: relative;
@@ -394,6 +395,13 @@ select {
 .qaf-new .qaf-new-program-details .image-container:hover img {
   filter: blur(0px);
   -webkit-filter: blur(0px);
+}
+@media (max-width: 796px) {
+  .qaf-new .qaf-new-program-details {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image-container::before {

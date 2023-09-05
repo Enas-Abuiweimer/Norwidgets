@@ -195,6 +195,7 @@
                 -o-transition: .5s all;
                 border-bottom-left-radius: 10px;
                 border-top-left-radius: 10px;
+                
 
                 img {
                     width: -moz-fit-content;
@@ -212,6 +213,7 @@
                     width: 0;
                     white-space: nowrap;
                 }
+                
             }
         }
 
@@ -368,13 +370,14 @@
  .qaf-new{
     display: flex;
     flex-direction: column;
+    
     .qaf-new-header{
         display: flex;
         align-items: center;
         gap: 10px;
         .qaf-svg{
             fill: rgb(28,80,85);
-            width: 10px;
+            width: 20px;
         }
         h4{
             color: rgb(28,80,85);
@@ -419,7 +422,7 @@
 
                 i.fa-solid{
                     font-size: 40px;
-}  
+                  }  
         } 
         }
         a:hover .vedio-button{
@@ -449,6 +452,7 @@
                 filter: blur(2px);
                 -webkit-filter: blur(2px);
                 border-bottom-left-radius: 50px;
+                width: 100%;
                 }
              &.before-bottom{
                 position: relative;
@@ -466,11 +470,15 @@
             filter: blur(0px);
             -webkit-filter: blur(0px);
         }
-          
+        @media (max-width: 796px){
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
     }
-
+   
  }
-  
+          
 .image-container::before{
     content: " ";
     position: absolute;
