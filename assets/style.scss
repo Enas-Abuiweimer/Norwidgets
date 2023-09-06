@@ -176,9 +176,14 @@
             padding: 0 1.5rem;
             width: 100%;
             align-items: flex-start;
+            
 
             b {
                 font-size: 24px;
+                @media (max-width:796px){
+                    font-size: 20px;
+                    
+                }
             }
 
             .view {
@@ -213,7 +218,24 @@
                     width: 0;
                     white-space: nowrap;
                 }
-                
+                @media(max-width: 796px){
+                    display: none;
+                }
+            }
+
+            .Mobile-view{
+               display: none;
+               @media(max-width: 796px){
+                display: flex;
+                background: $primary-color;
+                padding: 10px;
+                align-items: center;
+                border-radius: 40px 0px 40px 40px;
+                width: 125px;
+                justify-content: space-between;
+                height: 34px;
+                gap: 5px;
+            }
             }
         }
 

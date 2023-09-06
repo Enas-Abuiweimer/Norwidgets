@@ -149,6 +149,11 @@ select {
 .program-container .program b {
   font-size: 24px;
 }
+@media (max-width: 796px) {
+  .program-container .program b {
+    font-size: 20px;
+  }
+}
 .program-container .program .view {
   position: relative;
   display: flex;
@@ -178,6 +183,27 @@ select {
   transition: 0.3s all;
   width: 0;
   white-space: nowrap;
+}
+@media (max-width: 796px) {
+  .program-container .program .view {
+    display: none;
+  }
+}
+.program-container .program .Mobile-view {
+  display: none;
+}
+@media (max-width: 796px) {
+  .program-container .program .Mobile-view {
+    display: flex;
+    background: #C89D54;
+    padding: 10px;
+    align-items: center;
+    border-radius: 40px 0px 40px 40px;
+    width: 125px;
+    justify-content: space-between;
+    height: 34px;
+    gap: 5px;
+  }
 }
 .program-container a:hover .text {
   opacity: 1;
