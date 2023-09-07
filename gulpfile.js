@@ -6,8 +6,9 @@ const autoprefixer = require('gulp-autoprefixer');
 
 function compileSass() {
   return gulp.src('./assets/style.scss') 
-    .pipe(sass().on('error', sass.logError))
+  .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./dist/')) 
     
 }

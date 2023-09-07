@@ -1,13 +1,4 @@
-    $offwhite: rgb(250, 245, 232);
-    $primary-color: #C89D54;
-    $primary-hover-color: #B78C42;
-    $light-primary-color: #FAF5E8;
-    $second-color: #005450;
-    $third-color: #A7C6E4;
-    $fourth-color: #F2CC0A;
-    $light-color: #fff;
-    $dark-color: #000;
-    $semi-dark-color: #333;
+@import 'variables';
 
     // Start Global Style
     * {
@@ -136,6 +127,7 @@
             }
         }
     }
+    //first card start
     .program-container {
         @include display();
         position: relative;
@@ -247,7 +239,7 @@
     .container .program-container::-webkit-scrollbar{
         display: none;
     }
-
+ //second card start
     .program-container-two {
         @include display();
         margin-top: 30px;
@@ -309,8 +301,8 @@
 
             .logo {
                 position: absolute;
-                bottom: 1.5rem;
-                left: 1rem; 
+                bottom: 1rem;
+                left: 2rem; 
                 
             }
         }
@@ -318,8 +310,9 @@
 
         .episode-footer {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
+            gap: 77px;
 
             .person-name {
                 display: flex;
@@ -328,7 +321,7 @@
                 img {
                     object-fit: contain;
                     width: 65px;
-                    border: 7px solid rgb(183, 140, 66);
+                    border: 3px solid rgb(183, 140, 66);
                     border-radius: 40px;
                     object-fit: contain;
                     -webkit-border-radius: 40px;
@@ -511,7 +504,7 @@
     height: 100%;
     border-bottom-left-radius: 50px;
   }
-      
+      //question container start
    .question-container{
     background-color: white;
     margin-top: 50px;
@@ -555,12 +548,21 @@
                 margin-bottom: 0;
 
             }
-        }
+        }  
     }
-    
-   }   
+     
+   }    
  
    .program-episods {
+    .second-episode-details{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 1rem;
+        right: 4rem;
+        gap: 5px;
+        color: #fff;
+    }
      .second-episode-footer{
         display: flex;
         justify-content: space-evenly;
@@ -568,7 +570,7 @@
         align-items: baseline;
         div{
             h2{
-                font-weight: bold;
+                font-weight: bold; 
             }
         }
 
@@ -590,3 +592,4 @@
         }
      }
    }
+  
