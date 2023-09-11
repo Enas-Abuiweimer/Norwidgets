@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
   <div class="container custom-container">
@@ -267,12 +269,25 @@
       <div class="following-container">
             <div class="person-details-follow">
               <div class="follow-background">
+                <img src="/imgs/Photo Effect_.png" alt=""> 
+                <div class="personal-details">
+                  <h3>محمد الحسن ولد الددو</h3>
+                  <p>من مواليد 1970 درس العلم والشريعة</p>
+                </div>
+                <div class="follow-container" id="first-follow"  onclick="changeContent(this)">
+                  <b>قم بالمتابعة</b>
+                  <i class="fa-solid fa-circle-plus" style="color: rgb(28, 85, 80)"></i>
+                </div>
+              </div>
+            </div>
+            <div class="person-details-follow" >
+              <div class="follow-background">
                 <img src="/imgs/Photo Effect_.png" alt="">
                 <div class="personal-details">
                   <h3>محمد الحسن ولد الددو</h3>
                   <p>من مواليد 1970 درس العلم والشريعة</p>
                 </div>
-                <div class="follow-container">
+                <div class="follow-container" id="second-follow"  onclick="changeContent(this)">
                   <b>قم بالمتابعة</b>
                   <i class="fa-solid fa-circle-plus" style="color: rgb(28, 85, 80)"></i>
                 </div>
@@ -285,20 +300,7 @@
                   <h3>محمد الحسن ولد الددو</h3>
                   <p>من مواليد 1970 درس العلم والشريعة</p>
                 </div>
-                <div class="follow-container">
-                  <b>قم بالمتابعة</b>
-                  <i class="fa-solid fa-circle-plus" style="color: rgb(28, 85, 80)"></i>
-                </div>
-              </div>
-            </div>
-            <div class="person-details-follow">
-              <div class="follow-background">
-                <img src="/imgs/Photo Effect_.png" alt="">
-                <div class="personal-details">
-                  <h3>محمد الحسن ولد الددو</h3>
-                  <p>من مواليد 1970 درس العلم والشريعة</p>
-                </div>
-                <div class="follow-container">
+                <div class="follow-container" id="third-follow"  onclick="changeContent(this)">
                   <b>قم بالمتابعة</b>
                   <i class="fa-solid fa-circle-plus" style="color: rgb(28, 85, 80)"></i>
                 </div>
@@ -309,7 +311,7 @@
 
 </div>
 
-
+<script src="/js/script.js"></script>
 
 </body>
 </html>
