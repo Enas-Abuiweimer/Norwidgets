@@ -250,6 +250,8 @@
             flex-direction: column;
             border-radius: 10% 0% 10% 10%;
             flex: 0 1 50;
+            
+
 
             img {
                 width: 100%;
@@ -596,44 +598,24 @@
   .following-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
     margin-bottom: 30%;
+    align-items: center;
+    
+    
+    @media (max-width:767px){
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-content: unset;
+        gap: 1rem;
+        min-height: 600px;
+    }
      .person-details-follow{
         position: relative;
-        .follow-background{
-            position: relative;
+        max-height: fit-content;
             img{
-                width: 100%;
-                
+                width: 100%;              
             }
-        }
         .personal-details{
-        display: none;
-        }    
-        .follow-container{
-           position: absolute;
-           height: 20%;
-           top: 0;
-           left: 50%;
-           transform: translate(-50%,50%);
-           display: flex;
-           align-items: center;
-           background-color: rgb(255, 213, 0);
-           z-index: -1;
-           border-bottom-right-radius: 36px;
-           border-bottom-left-radius: 36px;
-           justify-content: center;
-           gap: 10px; 
-           width: -webkit-fill-available;
-           color: rgb(28, 85, 80);
-
-           b, i{
-            padding-top: 30px;
-           }
-           
-        }
-        
-        &:hover .personal-details{   
             display: flex;
             flex-direction: column;
             position: absolute;
@@ -642,18 +624,57 @@
             color: white;
             font-size: 17px;
             z-index: 999;
-                p{
-                    font-weight: 500;
-                }              
-         } 
+            opacity: 0;
+            transition: .5s all;
+            p{
+                font-weight: 500;
+            }
+            @media (max-width: 767px){
+                opacity: 1;
+               }
+        }
+
+        .follow-container{
+            position: absolute;
+            height: 88px;
+            bottom: 19px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #ffd500;
+            z-index: -1;
+            border-bottom-right-radius: 36px;
+            border-bottom-left-radius: 36px;
+            justify-content: center;
+            gap: 10px;
+            color: #1c5550;
+            transition: all 0.3s ease; 
+
+           b, i{
+            padding-top: 30px;
+           }
+           @media (max-width: 767px){
+            bottom: -55px;
+           }
+           
+        }
+        
+        &:hover .personal-details{   
+            opacity: 1;         
+         }
+
          &:hover .follow-container{
-            top: 82%;
-           transform: translate(-50%,50%); 
-           width: 100%;
-           transition: all 0.3s ease;              
+           
+           bottom: -55px;
+                        
          }
          
-     
+         @media (max-width:767px){           
+            max-width: 400px;
+            flex-grow: 1;
+            flex-shrink: 0;           
+            
+        }
      }  
      .person-details-follow::before{
         content: "";
@@ -668,10 +689,15 @@
         border-bottom-right-radius: 36px ;
         opacity: 0;
         transition: opacity 0.5s ease;
+        @media (max-width: 767px){
+            opacity: 1;
+        }
      }
      .person-details-follow:hover::before{
         opacity: 1;
      }
-
+   
   }  
-  
+  .container .following-container::-webkit-scrollbar{
+    display: none;
+}

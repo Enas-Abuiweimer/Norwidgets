@@ -59,3 +59,4 @@ function changeContent(div) {
       icon.classList.add("fa-plus"); 
     }
   }
+  
