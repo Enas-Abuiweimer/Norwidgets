@@ -46,6 +46,7 @@
         background-color: $offwhite ;
     }
 
+
     .container {
         .no-padding-container {
             padding: 0 !important;
@@ -126,6 +127,12 @@
                 }
             }
         }
+    }
+    .logo {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem; 
+        
     }
     //first card start
     .program-container {
@@ -301,12 +308,7 @@
            
             }
 
-            .logo {
-                position: absolute;
-                bottom: 1rem;
-                left: 2rem; 
-                
-            }
+           
         }
         
 
@@ -598,7 +600,7 @@
   .following-container{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     align-items: center;
     
     
@@ -620,7 +622,7 @@
             flex-direction: column;
             position: absolute;
             bottom: 0.8rem;
-            right: 1.5rem;
+            right: 1.5rem; 
             color: white;
             font-size: 17px;
             z-index: 999;
@@ -701,3 +703,34 @@
   .container .following-container::-webkit-scrollbar{
     display: none;
 }
+.question-container-yellow-label{
+    position: relative;
+    margin-bottom: 20%;
+  
+    .question-answer-content{
+        display: flex;
+        position: absolute;
+        right: 4rem;
+        z-index: 1;
+        flex-direction: column;
+        bottom: 1rem;
+        color: #fff;
+        white-space: pre-line;
+        align-items: flex-start;
+     
+        .person-name{
+            display: flex;
+            gap: 10px;
+            .question-answer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:-10px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}   
+

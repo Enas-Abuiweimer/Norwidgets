@@ -10,6 +10,7 @@ function compileSass() {
     .pipe(autoprefixer())
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./dist/')) 
+   
     
 }
 
