@@ -130,9 +130,16 @@
     }
     .logo {
         position: absolute;
-        bottom: 2rem;
-        left: 2rem; 
-        
+        bottom: 1.5rem;
+        left: 1.5rem; 
+        img{
+            @media(max-width: 767px){
+                width: 50px;
+                left: 6rem;
+                height: auto;
+            }
+        }
+      
         
     }
     //first card start
@@ -322,18 +329,20 @@
             .person-name {
                 display: flex;
                 gap: 15px;
+                align-items: center;
 
                 img {
                     object-fit: contain;
-                    width: 65px;
+                    height: 70px;
+                    width: auto;
                     border: 3px solid rgb(183, 140, 66);
-                    border-radius: 40px;
+                    border-radius: 50px;
                     object-fit: contain;
                     -webkit-border-radius: 40px;
                     -moz-border-radius: 40px;
                     -ms-border-radius: 40px;
                     -o-border-radius: 40px;
-                }
+                } 
 
                 .question-answer {
                     display: flex;
@@ -567,6 +576,10 @@
         right: 4rem;
         gap: 5px;
         color: #fff;
+        @media(max-width: 767px){
+            bottom: 2rem;
+            right: 2rem;
+        }
     }
      .second-episode-footer{
         display: flex;
@@ -576,6 +589,9 @@
         div{
             h2{
                 font-weight: bold; 
+            }
+            @media(max-width: 767px){
+                display: none;
             }
         }
 
@@ -594,7 +610,10 @@
                         vertical-align: middle;
                     }
                 }
+             
         }
+      
+       
      }
    }
  //last card
